@@ -4,7 +4,7 @@ spring 实物配置具有3部分：分别是DataSource、TransactionManager和�
 
 ​    具体如下图：
 
-![](Spring 事务配置.png)
+![](https://github.com/kouhao/LearningNotes/blob/master/spring/%E9%9A%8F%E7%AC%94/Spring%20%E4%BA%8B%E5%8A%A1%E9%85%8D%E7%BD%AE.png?raw=true)
 
 第一种方式：每个Bean都有一个代理:hibernate
 

@@ -4,7 +4,7 @@
 
 ###### 1.1接口关系：
 
-![](spring 异常统一处理/1.png)
+![](https://github.com/kouhao/LearningNotes/blob/master/spring/%E9%9A%8F%E7%AC%94/spring%20%E5%BC%82%E5%B8%B8%E7%BB%9F%E4%B8%80%E5%A4%84%E7%90%86/1.png?raw=true)
 
 ###### 1.2 DispatcherServlet 装配HandlerExceptionResolver 
 
@@ -14,11 +14,11 @@
 
 1.2.2 配置`<mvc:annotation-driven/>`情况下，装配ExceptionHandlerExceptionResolver，ResponseStatusExceptionResolver，DefaultHandlerExceptionResolver截图如下（借用图）：
 
-![](spring 异常统一处理/3.png)
+![](https://github.com/kouhao/LearningNotes/blob/master/spring/%E9%9A%8F%E7%AC%94/spring%20%E5%BC%82%E5%B8%B8%E7%BB%9F%E4%B8%80%E5%A4%84%E7%90%86/2.png?raw=true)
 
 1.2.3 配置 SimpleMappingExceptionResolver情况下，具体实例见后面,装配装配ExceptionHandlerExceptionResolver，ResponseStatusExceptionResolver，DefaultHandlerExceptionResolver，SimpleMappingExceptionResolver
 
-![](spring 异常统一处理/4.png)
+![](https://github.com/kouhao/LearningNotes/blob/master/spring/%E9%9A%8F%E7%AC%94/spring%20%E5%BC%82%E5%B8%B8%E7%BB%9F%E4%B8%80%E5%A4%84%E7%90%86/4.png?raw=true)
 
 - ExceptionHandlerExceptionResolver主要是解析Handler中用 @ExceptionHandler注解定义的方法。
 - ResponseStatusExceptionResolver，自定义一个异常类,使用@ResponseStatus 注解标注。若在处理器方法中抛出了这个异常,由于触发的异常带有@ResponseStatus注解。因此会被ResponseStatusExceptionResolver解析到。最后响应HttpStatus.xx状态码和reason信息给客户端。、
